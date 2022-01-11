@@ -44,14 +44,16 @@ _Source your workspace_
 
 8 - `source ~/turtle_ws/devel/setup.bash`
 
+_Run a Turtlebot3 world of your choice_
+
+9.1 - `roslaunch turtlebot3_gazebo turtlebot3_house.launch`
+
+9.2 - `roslaunch turtlebot3_gazebo turtlebot3_world.launch`
+
 
 ## A* run
 
-Run the turtlebot 3 house world with: 
-
-1 - `roslaunch turtlebot3_gazebo turtlebot3_house.launch`
-
-### Run the simulation
+### Run the navigation
 
 You can run the navigation with two launchs:
 
@@ -59,13 +61,13 @@ You can run the navigation with two launchs:
 
     _This launch will run the SLAM Gmapping Node with Move base planning the path with A*_
 
-    2.1 - `roslaunch ttb_astar navigation_a_star.launch`
+    1.1 - `roslaunch ttb_astar navigation_a_star.launch`
 
 - **Navigation with AMCL**
 
     _This launch will run the AMCL with the house map with Move base planning the path with A*. The navigation with AMCL is more precise._
 
-    2.2 - `roslaunch ttb_astar navigation_a_star_amcl.launch`
+    1.2 - `roslaunch ttb_astar navigation_a_star_amcl.launch`
 
 ## RRT run
 
@@ -77,17 +79,13 @@ _Load the image to docker_
 
 2 - `docker load < kineticrrt.tar.gz`
 
-_Run the turtlebot 3 house world with:_
-
-3 - `roslaunch turtlebot3_gazebo turtlebot3_house.launch`
-
 _Run the navigation launch_
 
-4 - `roslaunch ttb_rrt navigation_rrt.launch`
+3 - `roslaunch ttb_rrt navigation_rrt.launch`
 
 _Create the container through the image_
 
-3 - `docker run -it --privileged --net=host kinetic/rrt`
+4 - `docker run -it --privileged --net=host kinetic/rrt`
 
 _Run the rrt exploration launch inside the container_
 
