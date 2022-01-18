@@ -4,3 +4,6 @@
 [submodule "bir_turtlebot_expl-rrt"]
 	path = bir_turtlebot_expl-rrt
 	url = git@github.com:Brazilian-Institute-of-Robotics/bir_turtlebot_expl-rrt.git
+[submodule "bir_turtlebot_expl-prm"]
+	path = bir_turtlebot_expl-prm
+	url = git@github.com:Brazilian-Institute-of-Robotics/bir_turtlebot_expl-prm.git
