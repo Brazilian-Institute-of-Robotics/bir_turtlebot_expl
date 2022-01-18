@@ -90,3 +90,15 @@ _Create the container through the image_
 _Run the rrt exploration launch inside the container_
 
 5 - `roslaunch rrt_exploration simple.launch`
+
+# PRM run
+
+### Run the navigation
+
+You can run the navigation with two launchs:
+
+- **Navigation with Gmapping**
+
+    _This launch will run the SLAM Gmapping Node with Move base planning the path with PRM_
+
+    1.1 - `roslaunch turtlebot_prm navigation_prm.launch`
