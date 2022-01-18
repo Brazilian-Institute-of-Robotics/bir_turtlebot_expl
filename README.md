@@ -1,14 +1,14 @@
 # bir_turtlebot-expl
 
-This repository contains a **ROS** package to implement navigation with the  **A\*** algorithm on the **turtlebot 3**. A* (pronounced "A-star") is a path search algorithm.
+This repository contains 4 **ROS** packages to implement navigation with the  **A\***, **PRM**, **D\***, **RRT** on the **turtlebot 3**.
 
 **Keywords**: TurtleBot3, ROS, A*, D*, RRT, PRM
 
-**Author**: [Anderson Lima](https://github.com/aldenpower)<br />
+**Author**: [...]()<br />
 Affiliation: [BIR - Brazilian Institute of Robotics](https://github.comBrazilian-Institute-of-Robotics) <br />
 Maintainer: Anderson Lima, eng.andersonfsl@gmail.com
 
-_For more details visit [RASC](https://www.braziliansinrobotics.com/) and [Star navigation](https://www.braziliansinrobotics.com/2021-12-10-turtlebot3-astar-navigation/)_
+_For more details visit [RASC](https://www.braziliansinrobotics.com/), [Star navigation](https://www.braziliansinrobotics.com/2021-12-10-turtlebot3-astar-navigation/)_, ...
 
 
 ## Supported Versions
