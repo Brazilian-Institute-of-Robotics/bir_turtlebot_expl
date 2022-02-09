@@ -4,9 +4,9 @@ This repository contains 4 **ROS** packages to implement navigation with the  **
 
 **Keywords**: TurtleBot3, ROS, A*, D*, RRT, PRM
 
-**Author**: [...]()<br />
+**Author**: [Anderson Lima](https://github.com/aldenpower), [Juliana Santana](https://github.com/julianamaria30) and [Mateus Seixas](https://github.com/seixasxbr)<br />
 Affiliation: [BIR - Brazilian Institute of Robotics](https://github.comBrazilian-Institute-of-Robotics) <br />
-Maintainer: Anderson Lima, eng.andersonfsl@gmail.com
+Maintainer: [Anderson Lima](https://github.com/aldenpower), eng.andersonfsl@gmail.com
 
 _For more details visit [RASC](https://www.braziliansinrobotics.com/), [Star navigation](https://www.braziliansinrobotics.com/2021-12-10-turtlebot3-astar-navigation/)_, ...
 
@@ -127,3 +127,25 @@ You can run the navigation with a launch:
 _PRM nagivation trajectory_
 
 <img src="./images/prm.png" width="550" height="400" />
+
+## D* run
+
+_Download the image that will be used by docker through the link_
+
+1 - [D* image link](https://drive.google.com/file/d/1kNBrDlKOgyS2lKgNhOm-oQaP_OFxwase/view?usp=sharing)
+
+_Load the image to docker_
+
+2 - `docker load < kineticdstarimage.tar.gz`
+
+_Create the container through the image_
+
+4 - `docker run -it --privileged --net=host kinetic/dstar`
+
+_Run the D* move base launch inside the container_
+
+5 - `roslaunch srl_dstar_lite move_base_dstar_lite.launch`
+
+_D* navigation trajectory_
+
+<img src="./images/dstar.png" width="520" height="500" />
