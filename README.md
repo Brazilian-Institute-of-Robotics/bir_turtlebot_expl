@@ -78,6 +78,10 @@ You can run the navigation with two launchs:
 
     1.2 - `roslaunch ttb_astar navigation_a_star_amcl.launch`
 
+_A star navigation trajectory_
+
+<img src="./images/astar.png" width="520" height="500" />
+
 ## RRT run
 
 _Download the image that will be used by docker through the link_
@@ -120,6 +124,6 @@ You can run the navigation with a launch:
 
     1.1 - `roslaunch turtlebot_prm navigation_prm.launch`
 
-    _PRM nagivation trajectory_
+_PRM nagivation trajectory_
 
-    <img src="./images/prm.png" width="550" height="400" />
+<img src="./images/prm.png" width="550" height="400" />
