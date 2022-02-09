@@ -32,23 +32,32 @@ _Clone the turtlebot3 repositories_
 
 5 - `git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git`
 
-_Clone this respository_
+6 - `git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations`
 
-6 - `git clone --recurse-submodules https://github.com/Brazilian-Institute-of-Robotics/bir_turtlebot_expl.git`
+
+_Clone this respository with **--recurse-submodules** command, it will automatically initialize and update each submodule in the repository_
+
+7 - `git clone --recurse-submodules https://github.com/Brazilian-Institute-of-Robotics/bir_turtlebot_expl.git`
 
 _Build your workspace_
 
-7 - `cd ~/turtle_ws && catkin_make`
+8 - `cd ~/turtle_ws && catkin_make`
 
 _Source your workspace_
 
-8 - `source ~/turtle_ws/devel/setup.bash`
+9 - `source ~/turtle_ws/devel/setup.bash`
+
+_Export turtlebot3 model of your choice_
+
+10.1 - `export TURTLEBOT3_MODEL=burger`
+
+10.2 - `export TURTLEBOT3_MODEL=waffle`
 
 _Run a Turtlebot3 world of your choice_
 
-9.1 - `roslaunch turtlebot3_gazebo turtlebot3_house.launch`
+11.1 - `roslaunch turtlebot3_gazebo turtlebot3_house.launch`
 
-9.2 - `roslaunch turtlebot3_gazebo turtlebot3_world.launch`
+11.2 - `roslaunch turtlebot3_gazebo turtlebot3_world.launch`
 
 
 ## A* run
@@ -90,6 +99,14 @@ _Create the container through the image_
 _Run the rrt exploration launch inside the container_
 
 5 - `roslaunch rrt_exploration simple.launch`
+
+6 - _In the rviz select the first four points that represents the region to explore_
+
+<img src="./images/fourpoints.png" width="520" height="500" />
+
+7 - _Select the fifth point that represents the point that the turtle will start to explore_
+
+<img src="./images/fifthpoint.png" width="520" height="500" />
 
 # PRM run
 
