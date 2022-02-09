@@ -112,10 +112,14 @@ _Run the rrt exploration launch inside the container_
 
 ### Run the navigation
 
-You can run the navigation with two launchs:
+You can run the navigation with a launch:
 
 - **Navigation with Gmapping**
 
     _This launch will run the SLAM Gmapping Node with Move base planning the path with PRM_
 
     1.1 - `roslaunch turtlebot_prm navigation_prm.launch`
+
+    _PRM nagivation trajectory_
+
+    <img src="./images/prm.png" width="550" height="400" />
